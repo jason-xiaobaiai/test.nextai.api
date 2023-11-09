@@ -11,9 +11,9 @@ export async function onRequest(context) {
     const url = new URL(request.url);
     const headers_Origin = request.headers.get("Access-Control-Allow-Origin") || "*"
 
-    // console.log('https://api.openai.com' + url.pathname + url.search);
+    // console.log('https://api.nextweb.fun' + url.pathname + url.search);
 
-    const modifiedRequest = new Request('https://api.openai.com' + url.pathname + url.search, {
+    const modifiedRequest = new Request('https://api.nextweb.fun' + url.pathname + url.search, {
         method: request.method,
         headers: request.headers,
         body: request.body,
